@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS apas_info;
+
+CREATE TABLE apas_info
+(
+    id BIGINT(20) NOT NULL COMMENT '主键ID',
+	projid VARCHAR(50) NULL DEFAULT NULL COMMENT '办件号',
+	service_name VARCHAR(50) NULL DEFAULT NULL COMMENT '事件名称',
+	handstates VARCHAR(10) NULL DEFAULT NULL COMMENT '办件状态',
+	PRIMARY KEY (id)
+);
